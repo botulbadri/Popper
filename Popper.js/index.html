@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POPPER.JS under construction</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="halma">
+
+	<div class="halma1">
+	<H1>POPPER.JS</H1>
+	</div>
+
+	<div class="halma2">
+	<H2>WEBSITE UNDER CONSTRUCTION</H2>
+	<p>
+		A KICKASS LIBRARY<BR> USED TO MANAGE POPPERS IN WEB APPLICATIONS<BR> NOW MUCH MORE POWERFUL.
+	</p>
+	<a href="#">DOWNLOAD</a>
+	</div>
+
+	<div class="countdown">
+		<div class="countdown-widget">
+			<div class="timer-box">
+				<div class="label">DAYS</div>
+				<div class="value days">14</div>
+			</div>
+
+			<div class="timer-box">
+				<div class="label">HRS</div>
+				<div class="value weeks">15</div>
+			</div>
+
+			<div class="timer-box">
+				<div class="label">MINS</div>
+				<div class="value mins">16</div>
+			</div>
+
+			<div class="timer-box">
+				<div class="label">SEC</div>
+				<div class="value secs">17</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.countdown.min.js"></script>
+
+
+	<div id="getting-started"></div>
+
+	<script type="text/javascript">
+	  $(".days")
+	  .countdown("2017/11/01", function(event) {
+	    $(this).text(
+	      event.strftime('%D')
+	    );
+	  });
+	  $(".hours")
+	  .countdown("2017/11/01", function(event) {
+	    $(this).text(
+	      event.strftime('%H')
+	    );
+	  });
+	  $(".mins")
+	  .countdown("2017/11/01", function(event) {
+	    $(this).text(
+	      event.strftime('%M')
+	    );
+	  });
+	  $(".secs")
+	  .countdown("2017/11/01", function(event) {
+	    $(this).text(
+	      event.strftime('%S')
+	    );
+	  });
+	</script>
+</body>
+</html>
